@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
-main {
+/* Escritorio grande 
+@media only screen and (min-width: 992px) and (max-width: 1199px){ */
+  
+body {
   background: linear-gradient(
     rgba(56, 182, 255, 1) 50%,
-    rgba(53, 75, 132, 1) 50%
-  );
+    rgba(53, 75, 132, 1) 50%); 
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", "Arial";
+  font-family: "Lato", "Arial";
   font-size: 30px;
   overflow: hidden;
 }
@@ -23,7 +25,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-/* hola */
+
 .titulo {
   background-image: url(/img/cloud.png);
   background-size: cover;
@@ -51,20 +53,17 @@ main {
   flex-direction: column;
 }
 
-.boton {
+.obtenerUbicacion {
   width: 25vw;
   height: 5vh;
-  font-family: "Poppins", "Arial";
+  font-family: "Lato", "Arial";
   font-size: 15px;
   border-radius: 20px;
   border: none;
   background-color: #ebaa36;
   margin-top: 10px;
-}
+} 
 
-.boton_llovera {
-  display: none;
-}
 
 .imgsol {
   width: 40vw;
@@ -77,22 +76,36 @@ main {
   width: 35px;
   margin-left: 10vw;
 }
+
 .imglluvia {
   width: 40vw;
   height: 17vh;
   margin-top: 20px;
   margin-right: 20px;
 }
+/* }; */
 
-@media screen and (min-width: 400px) {
-  main {
+/* Escritorio pequeño / tablet 
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+} */
+
+/* Tablets y phablets 
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+} */
+
+/* Móviles */
+@media only screen and (min-width: 400px) {
+  body {
     background-color: #38b6ff;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", "Arial";
+    font-family: "Lato", "Arial";
     font-size: 30px;
   }
+
   .sol {
     flex-grow: 0.2;
   }
@@ -117,6 +130,7 @@ main {
     flex-direction: column;
     background-repeat: no-repeat;
   }
+
   .lluvia {
     display: none;
   }
@@ -125,18 +139,19 @@ main {
     margin-top: 20vh;
   }
 
-  .boton {
+  /*.boton {
     display: none;
-  }
+  }*/
+
   h1 {
     display: none;
   }
 
-  .boton_llovera {
+  .obtenerUbicacion {
     display: block;
     width: 25vw;
     height: 6vh;
-    font-family: "Poppins", "Arial";
+    font-family: "Lato", "Arial";
     font-size: 25px;
     border-radius: 50px;
     background-color: #ebaa36;
@@ -144,3 +159,4 @@ main {
     min-width: 300px;
   }
 }
+
